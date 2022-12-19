@@ -12,8 +12,7 @@ public class GitHubTest extends TestBase{
     step("Открывыаем страницу", () ->{
       open("https://github.com/");});
     step("Наводим мышкой на меню Solution", () ->{
-      $x("//button[contains(text(),'Solutions')]").hover();
-      $x("//button[contains(text(),'Solutions')]//following-sibling::div").shouldBe(Condition.visible);});
+      $x("//button[contains(text(),'Solutions')]").hover();});
     step("Кликаем на Enterprise в выподающем списке", () ->{
       $$x("//li[text()='For']//following::a[contains(text(),'Enterprise')]").get(0).shouldBe(Condition.visible).click();});
     step("Проверяем заголовок", () ->{
