@@ -9,8 +9,7 @@ import static io.qameta.allure.Allure.step;
 public class GitHubTest extends TestBase{
   @Test
   void gitHubSolutionsTest(){
-    step("Открывыаем страницу", () ->{
-      open("https://github.com/");});
+
     step("Наводим мышкой на меню Solution", () ->{
       $x("//button[contains(text(),'Solutions')]").hover();});
     step("Кликаем на Enterprise в выподающем списке", () ->{
